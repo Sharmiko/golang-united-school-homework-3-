@@ -9,10 +9,10 @@ func sortMapValues(input map[int]string) (result []string) {
 	}
 	sort.Ints(keys)
 
-	var sorted_values []string = make([]string, 0, len(input))
+	var sortedValues []string = make([]string, 0, len(input))
 	for elem := range keys {
-		sorted_values = append(sorted_values, input[elem])
+		sortedValues = append(sortedValues, input[elem])
 	}
 
-	return sorted_values
+	return sortedValues
 }
