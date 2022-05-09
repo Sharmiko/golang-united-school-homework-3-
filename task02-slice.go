@@ -1,6 +1,10 @@
 package homework
 
+import "sort"
+
 func reverse(input []int64) (result []int64) {
-	//Place your code here
-	return
+	sort.Slice(input, func(x, y int) bool {
+		return input[x] < input[y]
+	})
+	return input
 }
